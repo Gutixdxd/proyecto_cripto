@@ -9,3 +9,5 @@ class Document():
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     text = models.TextField()
     sign = models.IntegerField()
+    request_to = models.ForeignKey(User, on_delete=models.CASCADE)
+    accepted = models.IntegerField()
